@@ -8,6 +8,11 @@ def test_square_area_zero_and_positive():
     a_area = a.area()
     assert a_area == pytest.approx(9)
 
+def test_rect_area():
+    a = shapes.Rectangle(3,10)
+    a_area = a.area()
+    assert a_area == pytest.approx(30)
+
 
 def test_stats_keys_and_values():
     a = shapes.Square(3)
